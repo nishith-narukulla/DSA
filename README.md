@@ -58,3 +58,32 @@ for (int i = 0; i < arr.length; i++) {
 | Null value | Can not be null | Can be null |
 | Size | depends on the data type | same address size for all the types |
 | Methods | cannot call methods on them | can be used to call methods to perform operations |
+
+## Branching
+### If Elseif
+```java
+if (n == 1) {
+    System.out.println("ON");
+} else if (n == 0) {
+    System.out.println("OFF");
+} else {
+    System.out.println("Undefined");
+}
+```
+
+### Switch
+- https://tinyl.co/4m4p
+```java
+int day = 3;
+String dayString = switch(day){
+    case 1 -> "Monday";
+    case 2 -> "Tuesday";
+    case 3 -> "Wednesday";
+    case 4 -> "Thursday";
+    case 5 -> "Friday";
+    case 6 -> "Saturday";
+    case 7 -> "Sunday";
+    default -> "Invalid day";
+};
+System.out.println(dayString);
+```
