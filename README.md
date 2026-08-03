@@ -145,3 +145,39 @@ System.out.println(str1.hashCode());
 System.out.println(str1.concat(" Narukulla"));
 System.out.println(str1.matches(".*it*."));
 ```
+
+## Arrays
+- https://tinyl.co/4mIz
+
+- Fixed size
+- homogeneous
+- stores in contiguous memory locations
+
+### Methods
+| Method | Use |
+| ------ | --- |
+| arr.length | returns length of an array |
+| Arrays.toString(array) | converts array into string |
+| Arrays.asList(array) | wraps the array into fixed list |
+| Arrays.sort(array) | sorts an array in ascending order |
+| Arrays.sort(array, fromIndex, toIndex) | sort subset of array |
+| Arrays.binarySearch(array, key) | searches for a specific value (array must be sorted first) |
+| Arrays.copyOfRange(array, from, to) | copy subset of array into new array |
+| Arrays.equals(array1, array2) | array comparision |
+| Arrays.mismatch(array1, array2) | Finds and returns the index of the first element where the two arrays differ. It returns -1 if they are completely identical |
+
+```java
+int arr[] = { 5, 4, 3, 2, 1 };
+String arr2[] = { "Hello", "World" };
+int arr3[] = { 1, 2, 3, 4, 6 };
+
+System.out.println("Array size: " + arr.length);
+System.out.println("Array size: " + arr2.length);
+System.out.println(Arrays.toString(arr));
+System.out.println(Arrays.toString(arr2));
+Arrays.sort(arr);
+System.out.println(Arrays.toString(arr));
+System.out.println(Arrays.binarySearch(arr, 3));
+System.out.println(Arrays.equals(arr, arr3)); // false
+System.out.println(Arrays.mismatch(arr, arr3)); // 4
+```
